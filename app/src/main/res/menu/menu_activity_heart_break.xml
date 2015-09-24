@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActivityHeartBreak"
+
+    >
+    <item android:id="@+id/action_setting" android:title="@string/action_settings"
+        android:icon="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:orderInCategory="10"
+        android:showAsAction="always"
+         />
+    <item android:id="@+id/action_setting1" android:title="@string/action_settings"
+        android:icon="@drawable/abc_ic_menu_copy_mtrl_am_alpha"
+        android:orderInCategory="10"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/action_setting2" android:title="@string/action_settings"
+        android:icon="@drawable/abc_ic_voice_search_api_mtrl_alpha"
+        android:showAsAction="always"
+        android:orderInCategory="20"  />
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:icon="@drawable/abc_ic_menu_paste_mtrl_am_alpha"
+        android:orderInCategory="100" android:showAsAction="collapseActionView" />
+</menu>

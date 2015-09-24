@@ -1,0 +1,73 @@
+<!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--android:paddingTop="@dimen/activity_vertical_margin"-->
+<!--android:paddingBottom="@dimen/activity_vertical_margin"-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_color_ground"
+    >
+    <LinearLayout
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="26dp">
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        >
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/abc_btn_radio_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content">
+        <RadioButton
+            android:text="AA"
+            android:gravity="center"
+            android:button="@null"
+            android:background="@null"
+            android:drawableTop="@drawable/ic_list_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:text="AA"
+            android:gravity="center"
+            android:button="@null"
+            android:drawableTop="@drawable/ic_list_logs"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <RadioButton
+            android:button="@null"
+            android:gravity="center"
+            android:background="@null"
+            android:text="AA"
+            android:drawableTop="@drawable/ic_list_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        </RadioGroup>
+        <Space
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:visibility="invisible"
+            android:background="@null"
+            android:src="@drawable/ic_list_logs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+</LinearLayout>
