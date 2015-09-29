@@ -4,13 +4,14 @@ package com.lncosie.socket
 import com.squareup.okhttp.RequestBody
 import com.squareup.okhttp.ResponseBody
 import retrofit.*
-import retrofit.http.Body
+
 import retrofit.http.GET
 import retrofit.http.Path
-import retrofit.http.Streaming
+
 import java.io.InputStreamReader
-import java.io.Reader
+
 import java.net.*
+import java.util.*
 
 fun run(){
     val addr=InetAddress.getByName("www.baidu.com");
@@ -30,13 +31,15 @@ fun run(){
 
     val service=retrofit.create(RetrofitClient::class.java)
     service.getImage("doub").enqueue(object : Callback<ResponseBody> {
+        override fun onResponse(response: Response<ResponseBody>,p:Retrofit) {
+            throw UnsupportedOperationException()
+        }
+
         override fun onFailure(t: Throwable?) {
             throw UnsupportedOperationException()
         }
 
-        override fun onResponse(response: Response<ResponseBody>?) {
-            throw UnsupportedOperationException()
-        }
+
     })
 
 
@@ -50,25 +53,4 @@ interface RetrofitClient{
     @GET("/group/{id}/users")//Post put
     fun getImage(@Path("") user:String):Call<ResponseBody>;
 
-}
-fun softrounte(){
-    class Ip{
-
-    }
-    class IpTable{
-        inner data class Next(next:String,weight:Long);
-        lateinit val weights:Map<String,Next>;
-    }
-    class Rounter{
-        fun Query(node:String):Ip?{
-            return null
-        }
-    }
-    interface  Node{
-        fun descriptor():String;
-        fun invoke(rest:String):String;
-    }
-    fun send(node:Ip,message:ByteArray){
-
-    }
 }

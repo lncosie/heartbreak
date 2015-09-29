@@ -130,18 +130,5 @@ public class Service {
         }).start();
 
 
-        // new Thread(new Runnable() {
-        //     @Override
-        //     public void run() {
-        //         new GetAndUploadFileDemo().show();
-        //     }
-        // }).start();
-
-        // new Thread(new Runnable() {
-        //     @Override
-        //     public void run() {
-        //         new MultipartUploadDemo().show();
-        //     }
-        // }).start();
     }
 }
