@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.common.collect.LinkedListMultimap;
 import com.google.common.collect.Multimap;
 
 import java.util.stream.*;
@@ -42,7 +43,7 @@ public class ActivityHeartBreak extends AppCompatActivity {
     }
     void useGuagua()
     {
-
+        Multimap<Long,Long> multimap=LinkedListMultimap.create();
     }
 
 }

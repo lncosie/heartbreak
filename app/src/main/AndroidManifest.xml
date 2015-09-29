@@ -30,7 +30,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <meta-data android:name="com.alibaba.app.ossak" android:value="Joved6jJBxQYyIFK"></meta-data>
+        <meta-data android:name="com.alibaba.app.osssk" android:value="MUYlDDfz3IoGGKgR8omESGb23HIjqO "></meta-data>
+        <meta-data android:name="com.alibaba.app.ossbucketname" android:value="lncosie"></meta-data>
 
     </application>
 

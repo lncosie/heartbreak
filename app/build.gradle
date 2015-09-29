@@ -39,10 +39,13 @@ dependencies {
     compile 'com.android.support:multidex:1.0.0'
     compile 'com.google.guava:guava:18.0'
     compile 'org.roboguice:roboguice:3.0.1'
-    compile 'com.squareup.retrofit:retrofit:1.9.0'
+    compile 'com.squareup.retrofit:retrofit:2.+'
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     apt "org.androidannotations:androidannotations:$AAVersion"
     compile "org.androidannotations:androidannotations-api:$AAVersion"
+    compile 'com.aliyun.dpa:oss-android-sdk:1.+'
+    //compile 'io.projectreactor:reactor-core:2.+'
+    compile files('libs/antlr-runtime-4.5.1.jar')
 }
 buildscript {
     ext.kotlin_version = '0.13.1514'
